@@ -1,0 +1,102 @@
+.reservas-hero {
+  padding: 80px 0 72px;
+  background:
+    radial-gradient(circle at 92% 120%, transparent 0 180px, rgba(191, 192, 192, 0.14) 181px 182px, transparent 183px),
+    radial-gradient(circle at 92% 120%, transparent 0 260px, rgba(191, 192, 192, 0.1) 261px 262px, transparent 263px),
+    var(--cor-escura);
+}
+.reservas-hero-sobre {
+  margin: 0 0 12px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cor-prata);
+}
+.reservas-hero .secao-titulo {
+  font-size: clamp(2.8rem, 8vw, 5rem);
+  font-stretch: 62%;
+  font-weight: 900;
+}
+
+.espacos-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.espaco {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--cor-prata);
+  border-radius: var(--raio-g);
+  overflow: hidden;
+  background: var(--cor-clara);
+}
+.espaco > img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.espaco-texto {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 24px 24px;
+}
+.espaco-topo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: -36px;
+  margin-bottom: 12px;
+}
+.espaco-topo .anilha {
+  flex: none;
+}
+.espaco-topo h3 {
+  margin: 36px 0 2px;
+  font-size: 1.7rem;
+}
+.espaco-preco {
+  margin: 0;
+  font-weight: 700;
+  color: var(--cor-secundaria);
+}
+.espaco-texto > p {
+  margin: 0 0 12px;
+  color: var(--cor-secundaria);
+}
+.espaco-usos {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  flex: 1;
+  align-content: flex-start;
+}
+.espaco-usos li {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--cor-clara-2);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.espaco .btn {
+  align-self: flex-start;
+}
+
+.container-form {
+  max-width: 900px;
+}
+
+@media (max-width: 860px) {
+  .espacos-lista {
+    grid-template-columns: 1fr;
+  }
+  .espaco .btn {
+    align-self: stretch;
+  }
+}

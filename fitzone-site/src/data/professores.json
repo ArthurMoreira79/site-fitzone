@@ -1,0 +1,30 @@
+[
+  {
+    "id": "marcos",
+    "nome": "Marcos",
+    "area": "Musculação e personal",
+    "foto": "professor-marcos",
+    "bio": "Monta treinos de força para quem está começando e para quem quer sair do platô."
+  },
+  {
+    "id": "erica",
+    "nome": "Érica",
+    "area": "Yoga",
+    "foto": "professora-erica",
+    "bio": "Aulas para todos os níveis, com foco em mobilidade, respiração e postura."
+  },
+  {
+    "id": "julia",
+    "nome": "Júlia",
+    "area": "Crossfit",
+    "foto": "professora-julia",
+    "bio": "Treinos intensos em grupo, com cada movimento adaptado ao seu nível."
+  },
+  {
+    "id": "andre",
+    "nome": "André",
+    "area": "Natação e hidroginástica",
+    "foto": "professor-andre",
+    "bio": "Ensina crianças e adultos a nadar e comanda a hidro, que não pesa nas articulações."
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "nome": "Carla Mendes",
+    "contexto": "Aluna do plano Mensal",
+    "texto": "Treino de manhã cedo antes do trabalho. A academia abre às 5h e às 6h já estou na aula de crossfit."
+  },
+  {
+    "nome": "Rafael Souza",
+    "contexto": "Personal trainer",
+    "texto": "Reservo a sala de musculação para atender meus alunos. Sem fila no aparelho, o treino rende o dobro."
+  },
+  {
+    "nome": "Patrícia Lima",
+    "contexto": "Festa na piscina",
+    "texto": "Fiz o aniversário do meu filho na piscina. A recepção cuidou de tudo e as crianças não queriam ir embora."
+  },
+  {
+    "nome": "João Victor",
+    "contexto": "Aluno do plano Trimestral",
+    "texto": "A avaliação física do trimestral me ajudou a ver o que mudar. Em três meses já deu para notar a diferença."
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "id": "diaria",
+    "nome": "Diária",
+    "preco": 25,
+    "periodo": "por dia",
+    "inclui": ["Musculação e cardio por 1 dia", "Acesso ao vestiário"],
+    "selo": null
+  },
+  {
+    "id": "semanal",
+    "nome": "Semanal",
+    "preco": 70,
+    "periodo": "por 7 dias",
+    "inclui": ["Musculação e cardio por 7 dias", "Acesso ao vestiário"],
+    "selo": null
+  },
+  {
+    "id": "mensal",
+    "nome": "Mensal",
+    "preco": 119,
+    "periodo": "por mês",
+    "inclui": [
+      "Musculação e cardio",
+      "Aulas coletivas: yoga, crossfit e hidroginástica",
+      "Acesso ao vestiário"
+    ],
+    "selo": "Mais escolhido"
+  },
+  {
+    "id": "trimestral",
+    "nome": "Trimestral",
+    "preco": 309,
+    "precoMensal": 103,
+    "periodo": "por 3 meses",
+    "inclui": [
+      "Tudo do plano Mensal",
+      "1 avaliação física de brinde",
+      "Sai por R$ 103 por mês"
+    ],
+    "selo": "Promoção"
+  }
+]

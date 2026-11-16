@@ -1,0 +1,30 @@
+.reservas-privadas {
+  background: var(--cor-escura-2);
+}
+
+.reservas-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.reservas-topo .secao-sub {
+  margin-bottom: 0;
+}
+.reservas-topo .btn {
+  flex: none;
+}
+
+.reservas-regra {
+  margin: 32px 0 0;
+  text-align: center;
+  color: var(--cor-prata);
+}
+
+@media (max-width: 760px) {
+  .reservas-topo {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

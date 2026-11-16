@@ -1,0 +1,300 @@
+/* o formulário "veste" a cor do espaço escolhido (sempre com o nome escrito na barra de progresso) */
+.form-reserva {
+  --cor-anilha: var(--cor-prata);
+  padding: 28px;
+  border: 1px solid var(--cor-prata);
+  border-top: 8px solid var(--cor-anilha);
+  border-radius: var(--raio-g);
+  background: var(--cor-clara);
+  transition: border-color 0.3s;
+}
+
+.barra-progresso {
+  margin: -8px 0 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--cor-prata);
+}
+.barra-progresso svg {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  margin: 0 auto;
+}
+.barra-progresso svg rect {
+  transition: all 0.3s;
+}
+.barra-texto {
+  margin: 4px 0 0;
+  text-align: center;
+  color: var(--cor-secundaria);
+}
+.barra-texto strong {
+  color: var(--cor-escura);
+}
+
+.reserva-bloco {
+  margin: 0 0 12px;
+  padding: 0 0 20px;
+  border-bottom: 1px solid var(--cor-clara-2);
+}
+.reserva-bloco > legend,
+.reserva-titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 14px;
+  font-weight: 800;
+  font-stretch: 80%;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.02em;
+}
+.reserva-num {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--cor-escura);
+  color: var(--cor-clara);
+  font-size: 0.95rem;
+}
+.reserva-opcional {
+  font-weight: 500;
+  text-transform: none;
+  color: var(--cor-secundaria);
+  font-size: 0.9rem;
+  font-stretch: 100%;
+}
+
+/* ===== seletor de anilhas ===== */
+.seletor-anilhas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.seletor-anilha {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 8px 12px;
+  border: 2px solid var(--cor-clara-2);
+  border-radius: var(--raio-g);
+  cursor: pointer;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+.seletor-anilha:hover {
+  border-color: var(--cor-prata);
+}
+.seletor-anilha input {
+  position: absolute;
+  opacity: 0;
+  inset: 0;
+  cursor: pointer;
+}
+.seletor-anilha .anilha {
+  max-width: 100%;
+  gap: 8px;
+}
+.seletor-anilha .anilha-nome {
+  font-size: 0.95rem;
+}
+.seletor-anilha svg {
+  transition: transform 0.35s cubic-bezier(0.3, 1.4, 0.5, 1);
+}
+.seletor-anilha:has(input:checked) {
+  border-color: var(--cor-escura);
+  background: var(--cor-clara-2);
+}
+/* a escolhida "encaixa": desce e gira um pouco, como entrando na barra */
+.seletor-anilha:has(input:checked) svg {
+  transform: translateY(4px) rotate(-20deg) scale(1.04);
+}
+.seletor-anilha:has(input:focus-visible) {
+  outline: 3px solid var(--cor-primaria);
+  outline-offset: 2px;
+}
+.seletor-capacidade {
+  font-size: 0.85rem;
+  color: var(--cor-secundaria);
+}
+
+/* ===== linhas de campos ===== */
+.reserva-linha {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 12px;
+}
+.reserva-linha-2 {
+  grid-template-columns: 1fr 1fr;
+}
+.campo-curto {
+  max-width: 260px;
+}
+
+.reserva-aviso {
+  margin: 12px 0 0;
+  padding: 12px 14px;
+  border-radius: var(--raio);
+  border-left: 4px solid var(--cor-escura);
+  background: #fff4ee;
+  color: var(--cor-escura);
+}
+
+/* ===== serviços ===== */
+.reserva-servicos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.reserva-servico {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 48px;
+  padding: 10px 14px;
+  border: 1.5px solid var(--cor-clara-2);
+  border-radius: var(--raio);
+  cursor: pointer;
+}
+.reserva-servico:has(input:checked) {
+  border-color: var(--cor-escura);
+  background: var(--cor-clara-2);
+}
+.reserva-servico input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--cor-escura);
+}
+.reserva-servico-nome {
+  flex: 1;
+  font-weight: 600;
+}
+.reserva-servico-preco {
+  font-weight: 800;
+}
+.reserva-lockers {
+  margin: 10px 0 4px 46px;
+}
+
+/* ===== resumo ===== */
+.reserva-resumo {
+  margin-top: 8px;
+  padding: 24px;
+  border-radius: var(--raio-g);
+  background: var(--cor-escura);
+  color: var(--cor-clara);
+}
+.reserva-resumo h3 {
+  font-size: 1.5rem;
+}
+.reserva-resumo dl {
+  margin: 0 0 16px;
+}
+.reserva-resumo dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(191, 192, 192, 0.2);
+}
+.reserva-resumo dt {
+  color: var(--cor-prata);
+}
+.reserva-resumo dd {
+  margin: 0;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.reserva-resumo .reserva-total {
+  border-bottom: 0;
+  padding-top: 14px;
+  align-items: baseline;
+}
+.reserva-total dt {
+  color: var(--cor-clara);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.reserva-total dd {
+  font-size: 2.4rem;
+  font-weight: 900;
+  font-stretch: 62%;
+  color: var(--cor-primaria); /* coral como texto sobre fundo escuro: 4,9:1 */
+}
+.reserva-resumo-vazio,
+.reserva-resumo-obs {
+  color: var(--cor-prata);
+}
+.reserva-resumo-obs {
+  font-size: 0.9rem;
+}
+.reserva-resumo .campo-erro {
+  color: #ffb4a8;
+  margin-bottom: 12px;
+}
+.reserva-resumo .btn {
+  width: 100%;
+}
+
+/* ===== confirmação ===== */
+.reserva-ok {
+  --cor-anilha: var(--cor-primaria);
+  padding: 40px 28px;
+  border-top: 8px solid var(--cor-anilha);
+  border-radius: var(--raio-g);
+  background: var(--cor-escura);
+  color: var(--cor-clara);
+  text-align: center;
+}
+.reserva-ok h3 {
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+.reserva-ok p {
+  margin: 0 auto 8px;
+  max-width: 48ch;
+  font-size: 1.1rem;
+}
+.reserva-ok .reserva-ok-obs {
+  color: var(--cor-prata);
+  font-size: 0.95rem;
+}
+.reserva-ok-acoes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+.reserva-ok .btn-fantasma {
+  color: var(--cor-clara);
+}
+
+@media (max-width: 760px) {
+  .form-reserva {
+    padding: 20px 16px;
+  }
+  .seletor-anilhas {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .reserva-linha,
+  .reserva-linha-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .reserva-linha > .campo:first-child {
+    grid-column: 1 / -1;
+  }
+  .reserva-linha-2 > .campo {
+    grid-column: 1 / -1;
+  }
+  .reserva-lockers {
+    margin-left: 0;
+  }
+  .reserva-resumo {
+    padding: 20px 16px;
+  }
+}

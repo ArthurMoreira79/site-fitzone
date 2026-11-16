@@ -1,0 +1,35 @@
+:root {
+  /* Paleta (plano, 15/11) */
+  --cor-primaria: #ef8354;   /* Coral Glow: botões, CTAs, destaques. Texto sobre ele: sempre Jet Black */
+  --cor-primaria-forte: #e86d38;
+  --cor-escura: #2d3142;     /* Jet Black: hero, header, rodapé, seções escuras, texto sobre claro */
+  --cor-escura-2: #252836;   /* variação mais funda para alternar seções escuras */
+  --cor-secundaria: #4f5d75; /* Blue Slate: texto suave sobre claro, cards e ícones sobre escuro */
+  --cor-prata: #bfc0c0;      /* Silver: bordas e texto suave sobre escuro. Nunca texto sobre branco */
+  --cor-clara: #ffffff;
+  --cor-clara-2: #f4f4f5;    /* fundo alternativo das seções claras */
+
+  /* Anilhas: cada cor identifica um tipo de espaço e nunca é decoração */
+  --anilha-vermelha: #c8102e; /* Musculação */
+  --anilha-verde: #2e8540;    /* Yoga */
+  --anilha-amarela: #f2b705;  /* Crossfit */
+  --anilha-azul: #0057b8;     /* Piscina */
+
+  /* Tipografia */
+  --fonte: 'Archivo', system-ui, sans-serif;
+
+  /* Forma */
+  --raio: 6px;
+  --raio-g: 12px;
+  --sombra: 0 12px 32px rgba(17, 19, 28, 0.18);
+
+  /* Layout */
+  --largura-max: 1200px;
+  --altura-header: 68px;
+  --gutter: 20px;
+}
+
+[data-espaco='MUSCULACAO'] { --cor-anilha: var(--anilha-vermelha); --cor-anilha-texto: #ffffff; }
+[data-espaco='YOGA']       { --cor-anilha: var(--anilha-verde);    --cor-anilha-texto: #ffffff; }
+[data-espaco='CROSSFIT']   { --cor-anilha: var(--anilha-amarela);  --cor-anilha-texto: var(--cor-escura); }
+[data-espaco='PISCINA']    { --cor-anilha: var(--anilha-azul);     --cor-anilha-texto: #ffffff; }

@@ -1,0 +1,42 @@
+[
+  {
+    "codigo": "MUSCULACAO",
+    "nome": "Sala de Musculação",
+    "anilha": "vermelha",
+    "valorHora": 100,
+    "capacidade": 10,
+    "foto": "musculacao-privada",
+    "descricao": "Estúdio privado, separado do salão principal, com rack, banco, halteres e polia.",
+    "usos": ["Treino reservado", "Personal com aluno", "Gravação de conteúdo"]
+  },
+  {
+    "codigo": "YOGA",
+    "nome": "Sala de Yoga",
+    "anilha": "verde",
+    "valorHora": 70,
+    "capacidade": 20,
+    "foto": "yoga",
+    "descricao": "Piso de madeira, luz natural e tapetes para até 20 pessoas.",
+    "usos": ["Turma fechada", "Workshop", "Aula particular"]
+  },
+  {
+    "codigo": "CROSSFIT",
+    "nome": "Sala de Crossfit",
+    "anilha": "amarela",
+    "valorHora": 100,
+    "capacidade": 15,
+    "foto": "crossfit",
+    "descricao": "Rig de barras, remos, bikes, kettlebells e anilhas de borracha.",
+    "usos": ["Treino de equipe", "Desafio", "Evento de empresa"]
+  },
+  {
+    "codigo": "PISCINA",
+    "nome": "Piscina",
+    "anilha": "azul",
+    "valorHora": 80,
+    "capacidade": 25,
+    "foto": "piscina",
+    "descricao": "Piscina coberta e aquecida, com 4 raias.",
+    "usos": ["Aula particular de natação", "Hidro em grupo", "Aniversário"]
+  }
+]

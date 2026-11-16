@@ -1,0 +1,114 @@
+.planos-grade {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.card-plano {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 24px;
+  background: var(--cor-clara);
+  border: 1px solid var(--cor-prata);
+  border-radius: var(--raio-g);
+}
+
+/* "Mais escolhido": card escuro, destacado */
+.card-plano-destaque {
+  background: var(--cor-escura);
+  color: var(--cor-clara);
+  border-color: var(--cor-escura);
+  box-shadow: var(--sombra);
+}
+/* "Promoção": borda coral grossa (coral sobre branco só como detalhe, nunca texto) */
+.card-plano-promo {
+  border: 3px solid var(--cor-primaria);
+}
+
+.card-plano-selo {
+  position: absolute;
+  top: -14px;
+  left: 24px;
+  margin: 0;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--cor-primaria);
+  color: var(--cor-escura);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.card-plano h3 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.card-plano-preco {
+  margin: 0 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.card-plano-valor {
+  font-size: 3rem;
+  font-weight: 900;
+  font-stretch: 62%;
+  line-height: 1;
+}
+.card-plano-periodo {
+  color: var(--cor-secundaria);
+  font-weight: 600;
+}
+.card-plano-destaque .card-plano-periodo {
+  color: var(--cor-prata);
+}
+
+.card-plano ul {
+  list-style: none;
+  margin: 0 0 28px;
+  padding: 20px 0 0;
+  border-top: 1px solid var(--cor-prata);
+  display: grid;
+  gap: 10px;
+  flex: 1;
+}
+.card-plano-destaque ul {
+  border-top-color: rgba(191, 192, 192, 0.3);
+}
+.card-plano li {
+  position: relative;
+  padding-left: 22px;
+}
+/* marcador: anilha pequena de contorno, neutra (planos não usam cor de anilha) */
+.card-plano li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2.5px solid var(--cor-secundaria);
+}
+.card-plano-destaque li::before {
+  border-color: var(--cor-primaria);
+}
+
+.card-plano .btn {
+  width: 100%;
+}
+
+@media (max-width: 1040px) {
+  .planos-grade {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
+  }
+}
+@media (max-width: 560px) {
+  .planos-grade {
+    grid-template-columns: 1fr;
+  }
+}

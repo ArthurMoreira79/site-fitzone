@@ -1,0 +1,30 @@
+[
+  {
+    "codigo": "AVALIACAO_FISICA",
+    "nome": "Avaliação Física",
+    "valor": 70,
+    "cobranca": "FIXO",
+    "descricao": "Medidas, composição corporal e testes, com relatório para acompanhar sua evolução."
+  },
+  {
+    "codigo": "NUTRICIONISTA",
+    "nome": "Nutricionista",
+    "valor": 80,
+    "cobranca": "FIXO",
+    "descricao": "Consulta com plano alimentar pensado para o seu objetivo."
+  },
+  {
+    "codigo": "PERSONAL_TRAINER",
+    "nome": "Personal Trainer",
+    "valor": 50,
+    "cobranca": "POR_HORA",
+    "descricao": "Um professor só para você, durante o tempo da reserva."
+  },
+  {
+    "codigo": "LOCKER",
+    "nome": "Locker",
+    "valor": 5,
+    "cobranca": "POR_UNIDADE",
+    "descricao": "Armário com fechadura digital para guardar suas coisas."
+  }
+]

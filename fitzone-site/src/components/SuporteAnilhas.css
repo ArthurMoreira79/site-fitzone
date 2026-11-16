@@ -1,0 +1,70 @@
+.suporte {
+  --giro: 0deg;
+  position: relative;
+  isolation: isolate;
+}
+
+.suporte-anilhas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+.suporte-anilhas li {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.suporte-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: var(--raio-g);
+  padding: 8px;
+}
+.suporte-link .anilha {
+  max-width: 100%;
+}
+.suporte-link svg {
+  transform: rotate(var(--giro));
+  transition: transform 0.4s ease;
+}
+.suporte-link:hover svg {
+  transform: rotate(var(--giro)) translateY(-6px);
+}
+
+.suporte-capacidade {
+  font-size: 0.9rem;
+  color: var(--cor-prata);
+}
+.suporte-claro .suporte-capacidade {
+  color: var(--cor-secundaria);
+}
+
+/* a barra passa por trás das anilhas e aparece pelo furo central delas */
+.suporte-base {
+  position: absolute;
+  z-index: -1;
+  left: 2%;
+  right: 2%;
+  top: 91px; /* padding do link (8px) + metade da anilha (90px) - metade da barra */
+  height: 14px;
+  border-radius: 7px;
+  background: linear-gradient(180deg, #d9dada 0%, var(--cor-prata) 45%, #8e9090 100%);
+}
+
+@media (max-width: 860px) {
+  .suporte-anilhas {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 12px;
+  }
+  .suporte-base {
+    display: none;
+  }
+}

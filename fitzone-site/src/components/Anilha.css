@@ -1,0 +1,68 @@
+.anilha {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: var(--tamanho);
+}
+
+.anilha svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.anilha-disco {
+  fill: var(--cor-anilha);
+  stroke-width: 6;
+}
+/* aro de contraste: claro sobre fundo escuro, escuro sobre fundo claro */
+.anilha-fundo-escuro .anilha-disco {
+  stroke: var(--cor-clara);
+}
+.anilha-fundo-claro .anilha-disco {
+  stroke: var(--cor-escura);
+}
+
+.anilha-relevo {
+  fill: none;
+  stroke: rgba(0, 0, 0, 0.22);
+  stroke-width: 3;
+}
+
+.anilha-cubo {
+  fill: var(--cor-prata);
+}
+.anilha-cubo-borda {
+  fill: none;
+  stroke: rgba(45, 49, 66, 0.45);
+  stroke-width: 2;
+}
+
+.anilha-gravado {
+  fill: var(--cor-anilha-texto);
+  font-size: 21px;
+  font-weight: 900;
+  font-stretch: 72%;
+  letter-spacing: 0.04em;
+}
+
+.anilha-marca {
+  fill: var(--cor-anilha-texto);
+  opacity: 0.75;
+  font-size: 12px;
+  font-weight: 800;
+  font-stretch: 72%;
+  letter-spacing: 0.3em;
+}
+
+.anilha-nome {
+  font-weight: 800;
+  font-stretch: 72%;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 1.1rem;
+  line-height: 1.1;
+  text-align: center;
+}

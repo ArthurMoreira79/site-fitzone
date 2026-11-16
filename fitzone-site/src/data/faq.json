@@ -1,0 +1,30 @@
+[
+  {
+    "pergunta": "Preciso pagar matrícula?",
+    "resposta": "Não. Você paga só o plano escolhido: diária, semanal, mensal ou trimestral."
+  },
+  {
+    "pergunta": "A aula experimental é gratuita?",
+    "resposta": "Sim. Escolha a modalidade e o melhor período no formulário e a recepção confirma o horário pelo WhatsApp."
+  },
+  {
+    "pergunta": "As aulas coletivas estão incluídas em todos os planos?",
+    "resposta": "As aulas de yoga, crossfit e hidroginástica estão incluídas nos planos Mensal e Trimestral. A Diária e a Semanal dão acesso à musculação e ao cardio."
+  },
+  {
+    "pergunta": "Como funciona a reserva privada de um espaço?",
+    "resposta": "Você escolhe o espaço, o dia e o horário, e envia o pedido pelo WhatsApp. A recepção confirma a disponibilidade. Durante a reserva, o espaço fica só para você ou o seu grupo."
+  },
+  {
+    "pergunta": "Como é cobrado o tempo da reserva?",
+    "resposta": "Cobramos só horas completas, com mínimo de 1 hora. Uma reserva de 2h40 é cobrada como 2 horas, e uma de 30 minutos como 1 hora."
+  },
+  {
+    "pergunta": "Posso levar meu próprio personal trainer?",
+    "resposta": "Pode, na reserva privada da Sala de Musculação. Se preferir, contrate um professor da casa como serviço adicional."
+  },
+  {
+    "pergunta": "Tem estacionamento?",
+    "resposta": "Sim, estacionamento próprio e gratuito para alunos e para quem reservar um espaço."
+  }
+]

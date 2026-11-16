@@ -1,0 +1,103 @@
+.footer {
+  /* espaço embaixo para o botão flutuante do WhatsApp não cobrir o crédito */
+  padding: 80px 0 104px;
+  color: var(--cor-prata);
+  line-height: 1.7;
+}
+
+.footer-grade {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.1fr;
+  gap: 56px;
+}
+
+.footer-marca img {
+  height: 30px;
+  width: auto;
+  margin-bottom: 20px;
+}
+.footer-marca p {
+  max-width: 34ch;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-titulo {
+  margin: 4px 0 16px;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  color: var(--cor-clara);
+}
+
+.footer a {
+  color: var(--cor-clara);
+  text-decoration-color: var(--cor-primaria);
+  text-underline-offset: 4px;
+}
+.footer a:hover {
+  color: var(--cor-primaria);
+}
+
+.footer-contatos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+.footer-contatos a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+.footer-contatos svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  flex: none;
+}
+
+/* .footer na frente: a regra .container (margin: 0 auto) carrega depois e apagaria a margem */
+.footer .footer-base {
+  margin-top: 64px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(191, 192, 192, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 40px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 960px) {
+  .footer-grade {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 32px;
+  }
+  .footer-marca {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer {
+    padding-top: 56px;
+  }
+  .footer-grade {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .footer-titulo {
+    margin-bottom: 10px;
+  }
+  .footer .footer-base {
+    margin-top: 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

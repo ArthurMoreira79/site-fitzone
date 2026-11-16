@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FitZone">
+<title>FitZone</title>
+  <rect width="64" height="64" rx="12" fill="#2D3142"/>
+  <g transform="translate(0.98 55.00) scale(0.6686)">
+    <path fill="#FFFFFF" d="M22.4 0L4 0L4-68.8L40-68.8L40-53L22.4-53L22.4-39.9L36.4-39.9L36.4-23.9L22.4-23.9L22.4 0Z"/>
+    <path fill="#EF8354" d="M88.8 0L44 0L44-7.1L64.8-53L45.6-53L45.6-68.8L88.3-68.8L88.3-61.7L67.6-15.8L88.8-15.8L88.8 0Z"/>
+  </g>
+</svg>
